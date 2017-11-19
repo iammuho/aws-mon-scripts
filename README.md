@@ -58,7 +58,7 @@ mon-put-instance-data.pl [options]
 To send the data through a proxy
 
 ```
-  ./mon-put-instance-data.pl --proxy "http://proxy_host:proxy_port/" --mem-util --disk-space-util --disk-path=/ --from-cron
+  ./mon-put-instance-data.pl --proxy="http://proxy_host:proxy_port/" --mem-util --disk-space-util --disk-path=/ --from-cron
   ```
 
 

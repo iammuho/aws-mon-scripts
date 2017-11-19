@@ -55,6 +55,13 @@ mon-put-instance-data.pl [options]
 ./mon-put-instance-data.pl --mem-util --verify --verbose
 ``` 
 
+To send the data through a proxy
+
+```
+  ./mon-put-instance-data.pl --proxy "http://proxy_host:proxy_port/" --mem-util --disk-space-util --disk-path=/ --from-cron
+  ```
+
+
 To set a five-minute cron schedule to report memory and disk space utilization to CloudWatch
   ```
   */5 * * * * ~/aws-scripts-mon/mon-put-instance-data.pl --mem-util --disk-space-util --disk-path=/ --from-cron

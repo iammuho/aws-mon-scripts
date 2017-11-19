@@ -218,6 +218,7 @@ sub get_auto_scaling_group
   $ec2_opts{'verbose'} = $opts->{'verbose'};
   $ec2_opts{'verify'} = $opts->{'verify'};
   $ec2_opts{'user-agent'} = $opts->{'user-agent'};
+  $ec2_opts{'proxy'} = $opts->{'proxy'};
   $ec2_opts{'version'} = '2011-12-15';
   $ec2_opts{'url'} = get_ec2_endpoint();
   $ec2_opts{'aws-iam-role'} = $opts->{'aws-iam-role'};
